@@ -62,6 +62,7 @@ const ProducDetails = () => {
               <span className="newPrice text-danger ml-3"> 299.000 đ</span>
             </div>
             <span className="badge bg-success">Sẵn hàng</span>
+           
             <p className="mt-3">
               Không phải ngẫu nhiên mà những chiếc áo thun đến từ thương hiệu
               MLB lại chiếm được nhiều cảm tình từ các bạn trẻ đến vậy. Bất kể
@@ -187,11 +188,11 @@ const ProducDetails = () => {
                   <IoIosHeartEmpty />
                 </Button>
               </Tooltip>
-              <Tooltip title="So sánh" placement="top-start">
+              {/* <Tooltip title="So sánh" placement="top-start">
                 <Button className="btn-blue btn-lg btn-big btn-circle ml-4">
                   <MdCompareArrows />
                 </Button>
-              </Tooltip>
+              </Tooltip> */}
             </div>
           </div>
         </div>
