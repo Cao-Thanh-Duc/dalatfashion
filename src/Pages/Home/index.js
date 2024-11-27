@@ -51,7 +51,7 @@ const Home = () => {
                   slidesPerView={4}
                   spaceBetween={10}
                   slidesPerGroup={1}
-                  navigation={false}
+                  navigation={true}
                   pagination={{
                     clickable: true,
                   }}

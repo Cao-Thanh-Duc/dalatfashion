@@ -34,7 +34,8 @@ const Productitem = (props) => {
               <h6> MLB - Áo thun unisex cổ tròn tay ngắn hiện đại</h6>
             </Link>
 
-            <span className="text-success d-block"> Sẵn hàng</span>
+            <span className="text-success d-block"> Sẵn hàng </span>
+           
             <Rating
               className="mt-2 mb-2"
               name="read-only"

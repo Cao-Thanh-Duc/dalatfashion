@@ -150,7 +150,7 @@ const Navigation = () => {
             <ul className="list list-inline w100">
               <li className="list-inline-item">
                 <Link to="/cat/1">
-                  <Button> NAM </Button>
+                  <Button> NAM</Button>
                 </Link>
                 <div className="submenu shadow">
                   <Link to="/">

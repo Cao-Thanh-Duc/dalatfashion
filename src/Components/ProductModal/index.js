@@ -71,9 +71,9 @@ const ProducModal = (props) => {
               <Button className="btn-round btn-sml" variant="outlined">
                 <IoIosHeartEmpty /> &nbsp; Yêu thích
               </Button>
-              <Button className="btn-round btn-sml ml-3" variant="outlined">
+              {/* <Button className="btn-round btn-sml ml-3" variant="outlined">
                 <MdCompareArrows /> &nbsp; So sánh
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
