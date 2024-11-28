@@ -78,7 +78,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 500px;
-  height: 400px;
+  height: 500px;
 }
 
 .right-section h2 {
@@ -131,13 +131,14 @@ form button:hover {
   max-width: 1280px;
   align-items: center;
   margin: 20px auto;
+  height: calc(100vh - 40px);
   gap: 16px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .image-login {
   width: 700px;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -154,4 +155,21 @@ form button:hover {
 }
 .form-login-desc {
   margin-bottom: 20px;
+}
+
+.logo_login {
+  display: flex;
+  margin: 0 auto;
+}
+
+.form-footer {
+  text-decoration: underline;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.form-footer:hover {
+  color: #ff0000;
 }
