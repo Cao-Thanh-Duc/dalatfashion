@@ -11,7 +11,7 @@ import ProducModal from './Components/ProductModal';
 import Cart from './Pages/Cart';
 import Home from './Pages/Home';
 import Listing from './Pages/Listing';
-import Login from './Pages/Login';
+import Login from './Pages/Login/Login';
 import ProductDetails from './Pages/ProductDetails';
 const MyContext = createContext();
 
@@ -48,25 +48,13 @@ function App() {
         <Routes>
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/cat/:id' exact={true} element={<Listing />} />
-          <Route
-            path='/product/:id'
-            exact={true}
-            element={<ProductDetails />}
-          />
+          <Route path='/product/:id' exact={true} element={<ProductDetails />} />
           <Route path='/cart/:id' exact={true} element={<Cart />} />
           <Route path='/login' exact={true} element={<Login />} />
           <Route path='/register' exact={true} element={<Cart />} />
 
-          <Route
-            path='/introduct-dalatfashion/:id'
-            exact={true}
-            element={<Introduction />}
-          />
-          <Route
-            path='/contact-dalatfashion/:id'
-            exact={true}
-            element={<Contact />}
-          />
+          <Route path='/introduct-dalatfashion/:id' exact={true} element={<Introduction />} />
+          <Route path='/contact-dalatfashion/:id' exact={true} element={<Contact />} />
           <Route path='/login' exact={true} element={<Login />} />
         </Routes>
         {isHeaderFooterShow === true && <Footer />}
