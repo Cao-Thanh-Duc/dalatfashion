@@ -16,7 +16,7 @@ const Productitem = (props) => {
   return (
     <>
       <div className={`productItem ${props.itemview}`}>
-        <Link to="/product/1">
+        <Link to="/product">
           <div className="imgWrapper">
             <img src={sp1} className="w-100" />
             <span className="badge bg-primary"> -30%</span>

@@ -6,10 +6,13 @@ import { GrCart } from "react-icons/gr";
 import { FaRegCircleUser } from "react-icons/fa6";
 import SearchBox from "./SearchBox";
 import Navigation from "./Navigation";
-import React from "react";
+import React, { useContext } from "react";
 import Slider from "react-slick";
+import { MyContext } from '../../App'
 
 const Header = () => {
+  const context = useContext(MyContext);
+
   var settings = {
     dots: false,
     infinite: true,
@@ -47,14 +50,19 @@ const Header = () => {
             </div>
             <div className=" col-sm-10 d-flex align-items-center part2">
               <SearchBox />
+
               <div className="part3 d-flex align-items-center ml-auto">
-                <Button className="delivery ">
-                  <FaTruckFast />
-                </Button>
+                
+              {context.isLogin !== true ? ( <Link to="/login"> <Button className="btn-blue btn-round mr-3">Đăng nhập</Button> </Link> ) : ( <Button className="circle mr-3"> <FaRegCircleUser /> </Button> )}
+                
+               
+               
+              
+                
 
                 <div className="ml-auto cartTab d-flex align-items-center">
                   <div className="position-relative ml-2">
-                    <Link to="/cart/1">
+                    <Link to="/cart">
                       <Button className="circle ">
                         <GrCart />
                       </Button>
@@ -64,11 +72,12 @@ const Header = () => {
                     </span>
                   </div>
 
-                  <span class="price">897.000 đ</span>
+                  {/* <span class="price">897.000 đ</span> */}
                 </div>
-                <Button className="circle">
-                  <FaRegCircleUser />
+                <Button className="delivery ">
+                  <FaTruckFast />
                 </Button>
+               
               </div>
             </div>
           </div>

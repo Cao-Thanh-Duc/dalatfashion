@@ -13,6 +13,7 @@ import Home from './Pages/Home';
 import Listing from './Pages/Listing';
 import Login from './Pages/Login/Login';
 import ProductDetails from './Pages/ProductDetails';
+import Register from './Pages/Register';
 const MyContext = createContext();
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   const [selectedCountry, setselectedCountry] = useState('');
   const [isOpenProductModal, setisOpenProductModal] = useState(false);
   const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   useEffect(() => {
     getCountry('https://countriesnow.space/api/v0.1/countries/');
   }, []);
@@ -32,12 +34,14 @@ function App() {
 
   const values = {
     countryList,
-    setselectedCountry,
     selectedCountry,
+    setselectedCountry,
     isOpenProductModal,
-    isHeaderFooterShow,
     setisOpenProductModal,
+    isHeaderFooterShow,
     setIsHeaderFooterShow,
+    isLogin,
+    setIsLogin,
   };
 
   return (
@@ -47,15 +51,14 @@ function App() {
 
         <Routes>
           <Route path='/' exact={true} element={<Home />} />
-          <Route path='/cat/:id' exact={true} element={<Listing />} />
-          <Route path='/product/:id' exact={true} element={<ProductDetails />} />
-          <Route path='/cart/:id' exact={true} element={<Cart />} />
+          <Route path='/cat' exact={true} element={<Listing />} />
+          <Route path='/product' exact={true} element={<ProductDetails />} />
+          <Route path='/cart' exact={true} element={<Cart />} />
           <Route path='/login' exact={true} element={<Login />} />
-          <Route path='/register' exact={true} element={<Cart />} />
+          <Route path='/register' exact={true} element={<Register />} />
 
-          <Route path='/introduct-dalatfashion/:id' exact={true} element={<Introduction />} />
-          <Route path='/contact-dalatfashion/:id' exact={true} element={<Contact />} />
-          <Route path='/login' exact={true} element={<Login />} />
+          <Route path='/introduct-dalatfashion' exact={true} element={<Introduction />} />
+          <Route path='/contact-dalatfashion' exact={true} element={<Contact />} />
         </Routes>
         {isHeaderFooterShow === true && <Footer />}
 
