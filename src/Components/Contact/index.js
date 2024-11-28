@@ -15,35 +15,35 @@ const Contact = () => {
         <tbody>
           <tr>
             <td>Cao Thanh Đức</td>
-            <td>caothanhduc@dtu.deu.vn</td>
+            <td>caothanhduc@dtu.edu.vn</td>
             <td>012345678</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>Nguyễn Thị Lưu Ly</td>
-            <td>nguyenthiluuly@dtu.deu.vn</td>
+            <td>nguyenthiluuly@dtu.edu.vn</td>
             <td>012345678</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>Đoàn Hải Trân</td>
-            <td>doanhaitran@dtu.deu.vn</td>
+            <td>doanhaitran@dtu.edu.vn</td>
             <td>012345678</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>Lê Đại Ánh</td>
-            <td>ledaianh@dtu.deu.vn</td>
+            <td>ledaianh@dtu.edu.vn</td>
             <td>012345678</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>Trương Thị Ngọc Ánh</td>
-            <td>truongthingocanh@dtu.deu.vn</td>
+            <td>truongthingocanh@dtu.edu.vn</td>
             <td>012345678</td>
           </tr>
         </tbody>

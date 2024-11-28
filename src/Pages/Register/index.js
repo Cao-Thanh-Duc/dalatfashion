@@ -4,16 +4,19 @@ import Logo from "../../assets/images/DALAT.png";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import Google from "../../assets/images/gg.png";
-const Login = () => {
+
+
+const Register = () => {
   const context = useContext(MyContext);
   useEffect(() => {
     context.setIsHeaderFooterShow(false);
   }, []);
   const handleClick = (event) => { event.preventDefault(); window.history.pushState({}, '', '/'); window.location.reload(); };
+
   return (
     <section className="section loginPage">
       <div className="shape-bottom">
+        
       </div>
       <div className="container">
         <div className="box card p-3 shadow border-0">
@@ -24,13 +27,25 @@ const Login = () => {
           </div>
 
           <form className="mt-3">
-            <h2 className="text-center mb-3">ĐĂNG NHẬP</h2>
+            <h2 className="text-center mb-3">ĐĂNG KÝ</h2>
+            <div className="row">
+              <div className="form-group">
+                <TextField
+                  id="standard-basic"
+                  label="Họ và tên"
+                  type="fullname"
+                  required
+                  variant="standard"
+                  className="w-100"
+                />
+              </div>
+            </div>
 
             <div className="form-group">
               <TextField
                 id="standard-basic"
                 label="Email hoặc số điện thoại"
-                type="email"
+                type="username"
                 required
                 variant="standard"
                 className="w-100"
@@ -46,9 +61,16 @@ const Login = () => {
                 className="w-100"
               />
             </div>
-            <a className="border-effect cursor txt" href="#">
-              Quên mật khẩu?
-            </a>
+            <div className="form-group">
+              <TextField
+                id="standard-basic"
+                label="Nhập lại mật khẩu"
+                type="confirmpassword"
+                required
+                variant="standard"
+                className="w-100"
+              />
+            </div>
 
             <div className=" d-flex align-items-center">
               <Button
@@ -56,26 +78,22 @@ const Login = () => {
                 variant="outlined"
               >
                 {" "}
-                ĐĂNG NHẬP
+                ĐĂNG KÝ
               </Button>
             </div>
 
             <p className="txt">
               {" "}
-              Bạn chưa có tài khoản?{" "}
-              <Link to="/register" className="border-effect">
+              Bạn đã có tài khoản?{" "}
+              <Link to="/login" className="border-effect">
                 {" "}
-                Đăng ký
+                Đăng nhập
               </Link>
             </p>
-            
-            <Button className="loginWithGoogle mt-2 border">
-              <img src={Google} /> Đăng nhập với Google
-            </Button>
           </form>
         </div>
       </div>
     </section>
   );
 };
-export default Login;
+export default Register;

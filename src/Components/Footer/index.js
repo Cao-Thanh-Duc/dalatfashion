@@ -68,10 +68,10 @@ const Footer = () => {
             <ul>
               <h5> THÔNG TIN VỀ CHÚNG TÔI</h5>
               <li>
-                <Link to="#">Giới thiệu</Link>
+                <Link to="/introduct-dalatfashion">Giới thiệu</Link>
               </li>
               <li>
-                <Link to="#">Liên hệ</Link>
+                <Link to="/contact-dalatfashion">Liên hệ</Link>
               </li>
               <li>
                 <Link to="#">Tuyển dụng</Link>
@@ -89,16 +89,16 @@ const Footer = () => {
             <ul>
               <h5>LIÊN HỆ</h5>
               <li>
-                <Link to="https://s.net.vn/bgDd">
-                  Địa chỉ: 120 Hoàng Minh Thảo, phường Hòa Khánh Nam,
-                  <br /> Quận Liên Chiểu, Thành phố Đà Nẵng
+                <Link to="https://s.net.vn/bgDd"target="_blank">
+                  Địa chỉ: 120 Hoàng Minh Thảo, Hòa Khánh Nam,
+                   Liên Chiểu,  Đà Nẵng
                 </Link>
               </li>
               <li>
                 <Link to="#">Số điện thoại: 1900.1900</Link>
               </li>
               <li>
-                <Link to="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnqBvnLVmmKLZvMFvGghbmZbShBQVJCzCrsccSVCbXdHlKzzQDkqSKzbqmsvxgJfTnlbKh">
+                <Link to="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnqBvnLVmmKLZvMFvGghbmZbShBQVJCzCrsccSVCbXdHlKzzQDkqSKzbqmsvxgJfTnlbKh" target="_blank">
                   Email: support@dalatfashion.com.vn
                 </Link>
               </li>
@@ -108,7 +108,7 @@ const Footer = () => {
                 </span>
 
                 <span>
-                  <Link to="https://www.facebook.com/">
+                  <Link to="https://www.facebook.com/" target="_blank">
                     <img
                       className="imgsocial"
                       src={
@@ -118,7 +118,7 @@ const Footer = () => {
                   </Link>
                 </span>
                 <span>
-                  <Link to="https://www.instagram.com/">
+                  <Link to="https://www.instagram.com/" target="_blank">
                     <img
                       className="imgsocial"
                       src={
@@ -128,7 +128,7 @@ const Footer = () => {
                   </Link>
                 </span>
                 <span>
-                  <Link to="https://www.tiktok.com/">
+                  <Link to="https://www.tiktok.com/"  target="_blank">
                     <img
                       className="imgsocial"
                       src={
@@ -138,7 +138,7 @@ const Footer = () => {
                   </Link>
                 </span>
                 <span>
-                  <Link to="https://www.youtube.com/">
+                  <Link to="https://www.youtube.com/" target="_blank">
                     <img
                       className="imgsocial"
                       src={

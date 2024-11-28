@@ -131,7 +131,7 @@ const Navigation = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/introduct-dalatfashion/1">
+                      <Link to="/introduct-dalatfashion/">
                         <Button>Giới thiệu </Button>
                       </Link>
                     </li>
@@ -149,7 +149,7 @@ const Navigation = () => {
           <div className="col-sm-10 navPart2 d-flex align-center">
             <ul className="list list-inline w100">
               <li className="list-inline-item">
-                <Link to="/cat/1">
+                <Link to="/cat">
                   <Button> NAM</Button>
                 </Link>
                 <div className="submenu shadow">
@@ -180,7 +180,7 @@ const Navigation = () => {
                 </div>
               </li>
               <li className="list-inline-item">
-                <Link to="/cat/1">
+                <Link to="/cat">
                   <Button> UNISEX </Button>
                 </Link>
                 <div className="submenu shadow">
@@ -211,7 +211,7 @@ const Navigation = () => {
                 </div>
               </li>
               <li className="list-inline-item">
-                <Link to="/cat/1">
+                <Link to="/cat">
                   <Button> NỮ </Button>
                 </Link>
                 <div className="submenu shadow">
@@ -242,7 +242,7 @@ const Navigation = () => {
                 </div>
               </li>
               <li className="list-inline-item">
-                <Link to="/cat/1">
+                <Link to="/cat">
                   <Button> PHỤ KIỆN </Button>
                 </Link>
                 <div className="submenu shadow">
@@ -266,10 +266,10 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="list-inline-item ">
-                <Link to="/introduct-dalatfashion/1">
+                <Link to="/introduct-dalatfashion">
                   <Button
                     className={
-                      isActive("/introduct-dalatfashion/1") ? "activeGT" : ""
+                      isActive("/introduct-dalatfashion") ? "activeGT" : ""
                     }
                   >
                     {" "}
@@ -278,7 +278,7 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="contact-dalatfashion/1">
+                <Link to="contact-dalatfashion">
                   <Button> LIÊN HỆ </Button>
                 </Link>
               </li>

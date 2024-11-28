@@ -13,13 +13,15 @@ import Cart from "./Pages/Cart";
 import Login from "./Pages/Login";
 import Introduction from "./Components/Introduction";
 import Contact from "./Components/Contact";
+import Register from "./Pages/Register";
 const MyContext = createContext();
 
 function App() {
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setselectedCountry] = useState("");
   const [isOpenProductModal, setisOpenProductModal] = useState(false);
-const[isHeaderFooterShow, setIsHeaderFooterShow] = useState(true)
+  const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/");
   }, []);
@@ -32,48 +34,42 @@ const[isHeaderFooterShow, setIsHeaderFooterShow] = useState(true)
 
   const values = {
     countryList,
-    setselectedCountry,
     selectedCountry,
+    setselectedCountry,
     isOpenProductModal,
-    isHeaderFooterShow,
     setisOpenProductModal,
+    isHeaderFooterShow,
     setIsHeaderFooterShow,
+    isLogin,
+    setIsLogin
   };
 
   return (
     <BrowserRouter>
       <MyContext.Provider value={values}>
-        {
-          isHeaderFooterShow === true && <Header />
-        }
-        
+        {isHeaderFooterShow === true && <Header />}
+
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
-          <Route path="/cat/:id" exact={true} element={<Listing />} />
-          <Route
-            path="/product/:id"
-            exact={true}
-            element={<ProductDetails />}
-          />
-          <Route path="/cart/:id" exact={true} element={<Cart />} />
+          <Route path="/cat" exact={true} element={<Listing />} />
+          <Route path="/product" exact={true} element={<ProductDetails />} />
+          <Route path="/cart" exact={true} element={<Cart />} />
           <Route path="/login" exact={true} element={<Login />} />
-          <Route path="/register" exact={true} element={<Cart />} />
+          <Route path="/register" exact={true} element={<Register />} />
 
           <Route
-            path="/introduct-dalatfashion/:id"
+            path="/introduct-dalatfashion"
             exact={true}
             element={<Introduction />}
           />
           <Route
-            path="/contact-dalatfashion/:id"
+            path="/contact-dalatfashion"
             exact={true}
             element={<Contact />}
           />
         </Routes>
-        {
-          isHeaderFooterShow === true && <Footer />
-        }
-     
+        {isHeaderFooterShow === true && <Footer />}
+
         {isOpenProductModal === true && <ProducModal closeProductModal />}
       </MyContext.Provider>
     </BrowserRouter>
