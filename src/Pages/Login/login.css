@@ -137,8 +137,8 @@ form button:hover {
 }
 
 .image-login {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   border-radius: 8px;
 }

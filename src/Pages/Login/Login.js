@@ -1,29 +1,17 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { MyContext } from '../../App';
-import Logo from '../../assets/images/DALAT.png';
+import bgLogin from '../../assets/images/anh.png.png';
 import './login.css';
 
 export default function Login() {
-  const context = useContext(MyContext);
-  useEffect(() => {
-    context.setIsHeaderFooterShow(false);
-  }, []);
-
-  const handleClick = (event) => {
-    event.preventDefault();
-    window.history.pushState({}, '', '/');
-    window.location.reload();
-  };
-
   return (
     <div className='form-login-main'>
+      <img src={bgLogin} alt='bg-login' className='image-login' />
       <div class='right-section'>
-        <Link to='/' onClick={handleClick}>
-          <img src={Logo} className='logo_login' />
-        </Link>
         <h2 className='form-title'>Đăng nhập</h2>
-        <p className='form-login-desc'>Hãy nhập thông tin của bạn vào các ô dưới đây</p>
+        <p className='form-login-desc'>
+          Hãy nhập thông tin của bạn vào các ô dưới đây
+        </p>
         <form>
           <input type='email' placeholder='Email hoặc Số điện thoại' required />
           <input type='password' placeholder='Mật khẩu' required />
