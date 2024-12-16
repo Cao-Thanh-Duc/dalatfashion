@@ -10,7 +10,7 @@ import {
 } from '../utils/storage';
 
 const axiosClient = axios.create({
-  baseURL: 'http://localhost:3001/api', // connect domain to api BE
+  baseURL: 'https://dalat-fashion-server.onrender.com/api', // connect domain to api BE
   headers: {
     'Content-Type': 'application/json',
   },
